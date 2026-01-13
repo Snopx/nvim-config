@@ -16,6 +16,38 @@ return {
     highlights = {
       init = { -- this table overrides highlights in all themes
         -- Normal = { bg = "#000000" },
+        Comment = { italic = true },
+        Keyword = { italic = true },
+        Function = { italic = true },
+        Identifier = { italic = true },
+        Type = { italic = true },
+        Statement = { italic = true },
+        Conditional = { italic = true },
+        Repeat = { italic = true },
+        Operator = { italic = true },
+        Constant = { italic = true },
+        String = { italic = true },
+
+        -- Treesitter 组
+        ["@comment"] = { italic = true },
+        ["@keyword"] = { italic = true },
+        ["@keyword.function"] = { italic = true },
+        ["@keyword.return"] = { italic = true },
+        ["@conditional"] = { italic = true },
+        ["@repeat"] = { italic = true },
+        ["@function"] = { italic = true },
+        ["@type"] = { italic = true },
+        ["@variable"] = { italic = true },
+        ["@variable.parameter"] = { italic = true },
+
+        -- LSP semantic tokens
+        ["@lsp.type.class"] = { italic = true },
+        ["@lsp.type.enum"] = { italic = true },
+        ["@lsp.type.interface"] = { italic = true },
+        ["@lsp.type.parameter"] = { italic = true },
+        ["@lsp.type.property"] = { italic = true },
+        ["@lsp.type.variable"] = { italic = true },
+        ["@lsp.type.function"] = { italic = true },
       },
       astrodark = { -- a table of overrides/changes when applying the astrotheme theme
         -- Normal = { bg = "#000000" },
