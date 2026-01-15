@@ -16,7 +16,7 @@ return {
     highlights = {
       init = { -- this table overrides highlights in all themes
         -- Normal = { bg = "#000000" },
-        Comment = { italic = true },
+        Comment = { fg = "#6e7380", italic = true },
         Keyword = { italic = true },
         Function = { italic = true },
         Identifier = { italic = true },
