@@ -1,6 +1,6 @@
 return {
   {
-    "nvim-telescope/snacks.nvim",
+    "folke/snacks.nvim",
     keys = {
       {
         "<leader>fd",
