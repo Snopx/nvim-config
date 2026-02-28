@@ -18,6 +18,7 @@ return {
           -- ⭐ 你要的跳转键位
           map("n", "gd", vim.lsp.buf.definition, "Go to definition")
           map("n", "gD", vim.lsp.buf.declaration, "Go to declaration")
+          map("n", "<Leader>lf", vim.lsp.buf.format, "format buffer")
           -- map("n", "gi", vim.lsp.buf.implementation, "Go to implementation")
           -- map("n", "gr", vim.lsp.buf.references, "Go to references")
           -- map("n", "K", vim.lsp.buf.hover, "Hover documentation")

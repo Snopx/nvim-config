@@ -26,7 +26,7 @@ end
 vim.opt.shell = "nu"
 vim.opt.shellcmdflag = "-c"
 vim.opt.shellredir = ">%s 2>&1"
-vim.opt.shellquote = "\""
+vim.opt.shellquote = '"'
 vim.opt.shellxquote = ""
 
 require "lazy_setup"
