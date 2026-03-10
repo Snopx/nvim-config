@@ -2,7 +2,7 @@ return {
   {
     "seblyng/roslyn.nvim",
     opts = {
-      filewatching = "auto",
+      filewatching = "roslyn",
       broad_search = true,
       lock_target = false,
       silent = false,
@@ -19,6 +19,7 @@ return {
           map("n", "gd", vim.lsp.buf.definition, "Go to definition")
           map("n", "gD", vim.lsp.buf.declaration, "Go to declaration")
           map("n", "<Leader>lf", vim.lsp.buf.format, "format buffer")
+          map("n", "<Leader>la", vim.lsp.buf.code_action, "Code Action")
           -- map("n", "gi", vim.lsp.buf.implementation, "Go to implementation")
           -- map("n", "gr", vim.lsp.buf.references, "Go to references")
           -- map("n", "K", vim.lsp.buf.hover, "Hover documentation")
@@ -26,6 +27,14 @@ return {
         end,
 
         settings = {
+          ["csharp|completion"] = {
+            dotnet_show_completion_items_from_unimported_namespaces = true,
+            dotnet_show_name_completion_suggestions = true,
+          },
+          ["csharp|symbol_search"] = {
+            dotnet_search_reference_assemblies = true,
+          },
+
           ["csharp|inlay_hints"] = {
             csharp_enable_inlay_hints_for_implicit_object_creation = true,
             csharp_enable_inlay_hints_for_implicit_variable_types = true,
