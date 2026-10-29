@@ -20,6 +20,7 @@ return {
       options = {
         g = {
           -- neovide_fullscreen = true,
+          -- neovide_transparency = 0.85,
         },
         opt = {
           background = "dark",

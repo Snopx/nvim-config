@@ -16,6 +16,7 @@ return {
           "dotnet",
           "C:\\Roslyn\\Microsoft.CodeAnalysis.LanguageServer.dll",
           "--stdio",
+          "--autoLoadProjects",
         },
         on_attach = function(client, bufnr)
           local map = function(mode, lhs, rhs, desc) vim.keymap.set(mode, lhs, rhs, { buffer = bufnr, desc = desc }) end
